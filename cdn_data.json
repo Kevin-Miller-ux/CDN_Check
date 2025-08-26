@@ -1,0 +1,326 @@
+{
+  "cname_patterns": {
+    "cloudflare": [
+      "cloudflare.com", "cloudflare.net", "cf-", "cloudflare",
+      "cdnjs.cloudflare.com", "workers.dev", "pages.dev"
+    ],
+    "akamai": [
+      "akamai.com", "akamai.net", "akadns.net", "akamaized.net",
+      "akamaitech.net", "akamai-staging.net", "edgekey.net",
+      "edgesuite.net", "srip.net", "akamaitechnologies.com",
+      "akamaihd.net", "akamai.com", "akamaitesting.com"
+    ],
+    "amazon": [
+      "amazonaws.com", "cloudfront.net", "awsglobalaccel.com",
+      "awsdns", "aws.com", "amazon.com", "amazonwebservices.com",
+      "elasticbeanstalk.com", "elb.amazonaws.com"
+    ],
+    "fastly": [
+      "fastly.com", "fastlylb.net", "fastly.net", "global.prod.fastly.com",
+      "map.fastly.com", "freetls.fastly.com"
+    ],
+    "azure": [
+      "azureedge.net", "azure.com", "msecnd.net", "azurefd.net",
+      "trafficmanager.net", "cloudapp.net", "azurewebsites.net"
+    ],
+    "google": [
+      "googleusercontent.com", "googlesyndication.com", "googleapis.com",
+      "gstatic.com", "googleapis.com", "appspot.com", "googlehosted.com",
+      "google.com", "youtube.com", "ytimg.com"
+    ],
+    "maxcdn": [
+      "maxcdn.com", "netdna-cdn.com", "netdna-ssl.com",
+      "stackpathcdn.com", "bootstrapcdn.com"
+    ],
+    "incapsula": [
+      "incapdns.net", "incapsula.com", "imperva.com"
+    ],
+    "sucuri": [
+      "sucuri.net", "cloudproxy.net"
+    ],
+    "keycdn": [
+      "keycdn.com", "kxcdn.com"
+    ],
+    "jsdelivr": [
+      "jsdelivr.net", "cdn.jsdelivr.net"
+    ],
+    "unpkg": [
+      "unpkg.com"
+    ],
+    "cdnjs": [
+      "cdnjs.cloudflare.com", "cdnjs.com"
+    ],
+    "alibaba": [
+      "alicdn.com", "aliyuncs.com", "alicloudsec.com", "tbcache.com",
+      "taobaocdn.com", "alikunlun.com", "aliyun-inc.com",
+      "mmstat.com", "yunos.com", "alifenxi.com", "alibabacloud.com"
+    ],
+    "tencent": [
+      "tcdn.qq.com", "cdntip.com", "dnsv1.com", "qcloud.com",
+      "myqcloud.com", "qcloudcdn.com", "cdn.qcloud.com",
+      "tencentcloudapi.com", "qq.com"
+    ],
+    "baidu": [
+      "bdydns.com", "bcebos.com", "bdstatic.com", "shifen.com",
+      "baidubce.com", "yunjiasu-cdn.net", "baidu.com"
+    ],
+    "wangsu": [
+      "wscdns.com", "lxdns.com", "ourwebcdn.com", "wsglb0.com",
+      "wsdvs.com", "speedcdns.com", "chinacache.com", "wangsu.com"
+    ],
+    "chinacache": [
+      "chinacache.net", "ccgslb.com", "ccgslb.net", "ccgslb.com.cn",
+      "chinanetcenter.com", "customcdn.com", "customcdn.cn",
+      "china-cache.com", "c3dns.net"
+    ],
+    "upyun": [
+      "aicdn.com", "upyun.com", "upaiyun.com", "upyuncdn.com"
+    ],
+    "qiniu": [
+      "qiniudns.com", "clouddn.com", "qnssl.com", "qiniu.com"
+    ],
+    "ksyun": [
+      "ksyuncdn.com", "ksyun.com"
+    ],
+    "huawei": [
+      "hwcdn.net", "myhuaweicloud.com", "huaweicloud.com"
+    ],
+    "volcengine": [
+      "volcdnbj.com", "volccdn.com", "bytedance.com", "volcengine.com"
+    ],
+    "bootcdn": [
+      "bootcdn.cn", "staticfile.org"
+    ],
+    "360": [
+      "360wzb.com", "qhimg.com", "qhmsg.com", "360.cn"
+    ],
+    "netease": [
+      "163.com", "netease.com", "neteaseimg.com", "126.net"
+    ],
+    "jd": [
+      "jdcdn.com", "360buyimg.com", "jd.com"
+    ],
+    "douyu": [
+      "douyucdn.cn", "douyu.com"
+    ],
+    "gitee": [
+      "gitee.io", "gitee.com"
+    ],
+    "github": [
+      "github.io", "githubusercontent.com", "github.com"
+    ],
+    "stackpath": [
+      "stackpathcdn.com", "stackpath.bootstrapcdn.com"
+    ]
+  },
+  "header_patterns": {
+    "cache_headers": [
+      "x-cache", "x-cached", "x-cacheable", "x-hit-cache",
+      "x-cache-status", "x-cache-hits", "x-cache-lookup",
+      "cc_cache", "webcache", "cache-control", "age",
+      "x-cache-remote", "x-origin-cache"
+    ],
+    "cdn_headers": [
+      "x-cdn", "x-cdn-forward", "x-cdn-provider", "x-via", "via",
+      "x-cdn-pop", "x-edge-location", "x-cache-key"
+    ],
+    "cloudflare_headers": [
+      "cf-ray", "cf-request-id", "cf-visitor", "cf-connecting-ip",
+      "cf-ipcountry", "cf-cache-status", "x-cf-tsc", "cf-team",
+      "cf-worker", "cf-polished"
+    ],
+    "akamai_headers": [
+      "x-akamai", "x-akamai-request-id", "x-akamai-transformed",
+      "x-check-cacheable", "akamai-ghost", "x-akamai-session-id",
+      "x-akamai-staging"
+    ],
+    "amazon_headers": [
+      "x-amz-cf-id", "x-amz-cf-pop", "x-amz-request-id",
+      "x-cache", "x-amz-id-2", "x-amzn-requestid", "x-amzn-trace-id"
+    ],
+    "fastly_headers": [
+      "x-fastly-request-id", "x-served-by", "x-cache",
+      "fastly-debug-digest", "x-timer", "x-fastly-stats"
+    ],
+    "azure_headers": [
+      "x-azure-ref", "x-msedge-ref", "x-cache", "x-azure-requestid"
+    ],
+    "chinese_cdn_headers": [
+      "chinacache", "powered-by-chinacache", "x-ser",
+      "x-req-id", "x-requestid", "yunjiasu", "verycdn",
+      "x-tengine", "x-swift-cachetime", "x-via-cdn"
+    ],
+    "other_headers": [
+      "x-edge-", "x-proxy-node", "x-served-by", "x-iinfo",
+      "x-llid", "sozu-id", "x-ws-request-id", "fss-cache",
+      "x-beluga-cache-status", "skyparkcdn", "x-sucuri-id",
+      "x-github-request-id", "x-proxy-cache"
+    ]
+  },
+  "ip_ranges": {
+    "cloudflare": [
+      "173.245.48.0/20", "103.21.244.0/22", "103.22.200.0/22",
+      "103.31.4.0/22", "141.101.64.0/18", "108.162.192.0/18",
+      "190.93.240.0/20", "188.114.96.0/20", "197.234.240.0/22",
+      "198.41.128.0/17", "162.158.0.0/15", "104.16.0.0/13",
+      "104.24.0.0/14", "172.64.0.0/13", "131.0.72.0/22",
+      "2400:cb00::/32", "2606:4700::/32", "2803:f800::/32"
+    ],
+    "akamai": [
+      "23.0.0.0/12", "104.64.0.0/10", "184.24.0.0/13",
+      "23.32.0.0/11", "23.64.0.0/14", "95.100.0.0/15",
+      "96.6.0.0/15", "184.26.0.0/15", "2.16.0.0/13",
+      "184.50.0.0/15", "92.122.0.0/15", "184.28.0.0/15"
+    ],
+    "amazon": [
+      "52.46.0.0/18", "52.84.0.0/15", "54.230.0.0/16",
+      "54.239.128.0/18", "99.84.0.0/16", "205.251.192.0/19",
+      "54.182.0.0/16", "54.192.0.0/16", "52.222.128.0/17",
+      "13.32.0.0/15", "13.224.0.0/14", "70.132.0.0/18"
+    ],
+    "fastly": [
+      "23.235.32.0/20", "43.249.72.0/22", "103.244.50.0/24",
+      "103.245.222.0/23", "103.245.224.0/24", "104.156.80.0/20",
+      "151.101.0.0/16", "157.52.64.0/18", "167.82.0.0/17",
+      "185.31.16.0/22", "199.27.72.0/21"
+    ],
+    "azure": [
+      "13.107.42.14/32", "13.107.6.171/32", "204.79.197.200/32",
+      "40.90.0.0/16", "52.96.0.0/14", "104.40.0.0/13"
+    ],
+    "alibaba": [
+      "106.11.0.0/16", "111.13.0.0/16", "115.124.0.0/16",
+      "118.178.0.0/16", "120.55.0.0/16", "121.40.0.0/16",
+      "47.88.0.0/16", "47.89.0.0/16", "47.90.0.0/16",
+      "47.91.0.0/16", "47.92.0.0/16", "47.93.0.0/16"
+    ],
+    "tencent": [
+      "58.247.0.0/16", "58.250.0.0/16", "119.28.0.0/16",
+      "129.204.0.0/16", "132.232.0.0/16", "134.175.0.0/16",
+      "148.70.0.0/16", "150.109.0.0/16", "162.14.0.0/16",
+      "81.68.0.0/14", "101.32.0.0/16"
+    ],
+    "baidu": [
+      "14.215.0.0/16", "111.206.0.0/16", "115.239.0.0/16",
+      "119.75.0.0/16", "180.149.0.0/16", "220.181.0.0/16",
+      "123.125.0.0/16", "61.135.0.0/16", "36.110.0.0/16"
+    ],
+    "chinacache": [
+      "60.190.0.0/16", "61.158.0.0/16", "125.39.0.0/16",
+      "183.131.0.0/16", "219.153.0.0/16", "112.253.0.0/16"
+    ],
+    "google": [
+      "8.8.4.0/24", "8.8.8.0/24", "8.34.208.0/20", "8.35.192.0/20",
+      "23.236.48.0/20", "23.251.128.0/19", "34.64.0.0/10",
+      "35.184.0.0/13", "35.192.0.0/14", "35.196.0.0/15"
+    ]
+  },
+  "asn_data": {
+    "AS13335": "Cloudflare",
+    "AS16509": "Amazon",
+    "AS20940": "Akamai",
+    "AS54113": "Fastly",
+    "AS32934": "Facebook",
+    "AS15169": "Google",
+    "AS8075": "Microsoft",
+    "AS45102": "Alibaba",
+    "AS132203": "Tencent",
+    "AS38365": "Baidu",
+    "AS37963": "Alibaba Cloud",
+    "AS23910": "ChinaCache",
+    "AS4812": "China Telecom",
+    "AS4837": "China Unicom",
+    "AS9808": "China Mobile",
+    "AS24424": "UPYUN",
+    "AS56040": "Qiniu",
+    "AS40065": "WangSu",
+    "AS23724": "IDC Frontier",
+    "AS36408": "LEASEWEB",
+    "AS14061": "DIGITALOCEAN",
+    "AS16276": "OVH",
+    "AS31898": "ORACLE-BMC-31898",
+    "AS6939": "HURRICANE",
+    "AS42473": "ANEXIA"
+  },
+  "ssl_patterns": {
+    "cloudflare": ["cloudflare", "cloudflaressl", "sni.cloudflaressl.com"],
+    "akamai": ["akamai", "akamai.com"],
+    "amazon": ["amazon", "aws", "cloudfront", "amazonaws.com"],
+    "fastly": ["fastly", "fastly.com"],
+    "letsencrypt": ["letsencrypt", "let's encrypt"],
+    "alibaba": ["alibaba", "aliyun", "alibabacloud.com"],
+    "tencent": ["tencent", "qcloud", "tencentcloudapi.com"],
+    "baidu": ["baidu", "baidubce.com"],
+    "google": ["google", "googleapis.com"],
+    "azure": ["microsoft", "azure", "azurewebsites.net"]
+  },
+  "response_patterns": {
+    "cloudflare": [
+      "cloudflare", "cf-ray", "cloudflare-nginx", "attention required",
+      "checking your browser", "ddos protection by cloudflare"
+    ],
+    "akamai": [
+      "akamai", "ghost", "reference #", "akamai global host"
+    ],
+    "amazon": [
+      "cloudfront", "amazon", "generated by cloudfront"
+    ],
+    "fastly": [
+      "fastly", "varnish", "fastly error"
+    ],
+    "incapsula": [
+      "incapsula", "request unsuccessful", "imperva incapsula"
+    ],
+    "sucuri": [
+      "sucuri", "website firewall", "sucuri cloudproxy"
+    ]
+  },
+  "domain_patterns": {
+    "cdn_subdomains": [
+      "cdn", "static", "assets", "img", "js", "css",
+      "media", "upload", "download", "file", "resource",
+      "content", "cache", "edge", "fast", "speed"
+    ],
+    "cache_subdomains": [
+      "cache", "cached", "edge", "fast", "speed", "quick"
+    ]
+  },
+  "port_patterns": {
+    "common_ports": [80, 443, 8080, 8443, 3128, 8000, 9000],
+    "cdn_specific_ports": [6081, 6082, 8888, 1080]
+  },
+  "error_pages": {
+    "cloudflare": [
+      "error 1020", "error 1000", "error 522", "error 524",
+      "cloudflare ray id", "performance & security by cloudflare"
+    ],
+    "akamai": [
+      "reference #18", "akamai error", "the website is temporarily unavailable"
+    ],
+    "amazon": [
+      "bad request", "cloudfront", "request id:"
+    ],
+    "incapsula": [
+      "request unsuccessful", "incapsula incident id"
+    ]
+  },
+  "dns_servers": {
+    "global": ["8.8.8.8", "1.1.1.1", "9.9.9.9", "208.67.222.222"],
+    "china": ["114.114.114.114", "223.5.5.5", "119.29.29.29", "180.76.76.76"],
+    "europe": ["9.9.9.9", "1.0.0.1", "194.242.2.2", "77.88.8.8"],
+    "asia": ["203.80.96.10", "203.80.96.9", "168.95.1.1", "203.80.96.10"]
+  },
+  "geo_ip_apis": [
+    "https://ipinfo.io/{ip}/json",
+    "http://ip-api.com/json/{ip}",
+    "https://ipapi.co/{ip}/json/",
+    "https://freegeoip.app/json/{ip}"
+  ],
+  "timing_thresholds": {
+    "fast_response": 100,
+    "normal_response": 500,
+    "slow_response": 1000,
+    "cdn_typical_ttl": 300,
+    "origin_typical_ttl": 3600
+  }
+}
